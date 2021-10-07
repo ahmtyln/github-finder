@@ -8,7 +8,7 @@ class UserDetails extends Component {
         this.props.getUserRepos(this.props.match.params.login);
     }
     render() {
-        const {loading,repos} = this.props;
+        const {repos} = this.props;
         const {name,avatar_url,location,html_url,bio,blog,followers,following,public_repos} = this.props.user;
 
         if(this.props.loading) return <Loading />
